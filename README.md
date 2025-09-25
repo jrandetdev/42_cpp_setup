@@ -21,40 +21,39 @@ CPP05/
 
 Each folder gets a basic main.cpp, header file with class template, and a working Makefile.
 
-## Quick install (works on school computers)
+## Setup
 
-Just run this one line:
+**Add this alias to your ~/.zshrc:**
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/YOURUSERNAME/YOURREPO/main/setup-cpp.sh)"
+# 42 CPP exercise setup
+alias cpp-setup='function _cpp_setup() { 
+    if [ $# -ne 2 ]; then
+        echo "Usage: cpp-setup <module> <exercises>"
+        echo "Example: cpp-setup 5 6 (creates CPP05 with ex00-ex05)"
+        return 1
+    fi
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/YOURUSERNAME/YOURREPO/main/setup-cpp.sh)" $1 $2
+}; _cpp_setup'
+```
+
+**Reload your shell:**
+```bash
+source ~/.zshrc
 ```
 
 ## Usage
 
 ```bash
-setup-cpp <cpp_module> <num_exercises>
+cpp-setup <module> <exercises>
 ```
 
-Examples:
+**Examples:**
 ```bash
-setup-cpp 5 6    # Makes CPP05 with ex00-ex05
-setup-cpp 2 4    # Makes CPP02 with ex00-ex03  
-setup-cpp 8 1    # Makes CPP08 with just ex00
+cpp-setup 5 6    # Makes CPP05 with ex00-ex05
+cpp-setup 2 4    # Makes CPP02 with ex00-ex03  
+cpp-setup 8 1    # Makes CPP08 with just ex00
+cpp-setup        # Shows usage help
 ```
-
-## If you want to install it locally
-
-```bash
-mkdir ~/bin
-curl -o ~/bin/setup-cpp https://raw.githubusercontent.com/YOURUSERNAME/YOURREPO/main/setup-cpp.sh
-chmod +x ~/bin/setup-cpp
-```
-
-Add to your ~/.bashrc:
-```bash
-alias setup-cpp='~/bin/setup-cpp'
-```
-
-Then `source ~/.bashrc` and you're good.
 
 ## What gets created
 
@@ -77,15 +76,16 @@ Already set up with c++98 flags and all the 42 requirements. Just works.
 
 ## Setup for sharing
 
-1. Make a GitHub repo
-2. Upload the script  
-3. Change YOURUSERNAME/YOURREPO in the curl command
-4. Share with your friends
+1. Create a GitHub repo
+2. Upload your `setup-cpp.sh` script
+3. Replace `YOURUSERNAME/YOURREPO` in the alias above
+4. Share the alias with classmates
 
 ## Notes
 
 - Only works with single digits (0-9) for both module and exercise count
-- Script checks your input so it won't break if you mess up
-- All the generated files have placeholder content - you still gotta write the actual code :)
+- Script validates input so it won't break if you mess up
+- All the generated files have placeholder content - you still gotta write the actual code
+- Add the alias to everyone's .zshrc to use it
 
 That's it. Saves me like 5 minutes every module, which adds up.
