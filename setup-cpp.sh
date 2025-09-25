@@ -8,7 +8,7 @@ output_help_message()
 	exit 1
 }
 
-create_header_file_with_class()
+fill_header_file_with_class()
 {
 cat << 'EOF' > "$templatehpp"
 #ifndef TO_REPLACE_HPP
@@ -32,7 +32,7 @@ class ToReplace
 EOF
 }
 
-create_makefile()
+fill_makefile()
 {
 	cat << 'EOF' > "$Makefile"
 NAME		=	TO_REPLACE
@@ -70,6 +70,19 @@ re: fclean all
 EOF
 }
 
+fill_main()
+{
+cat << 'EOF' > "$maincpp"
+#include "TO_REPLACE.hpp"
+#include <iostream>
+
+int main()
+{
+	return 0;
+}
+EOF
+}
+
 if [ $# -ne 2 ];
 then
 	output_help_message
@@ -101,7 +114,6 @@ for i in $(seq 0 $((num_exercise - 1))); do
 	mkdir -p "$full_path"
 
 	maincpp="$full_path/main.cpp"
-	echo '#include "TO_REPLACE.hpp"' > $maincpp
 	templatehpp="$full_path/TO_REPLACE.hpp"
 	Makefile="$full_path/Makefile"
 
@@ -109,8 +121,9 @@ for i in $(seq 0 $((num_exercise - 1))); do
 	touch $templatehpp
 	touch $Makefile
 
-	create_header_file_with_class
-	create_makefile
+	fill_main
+	fill_header_file_with_class
+	fill_makefile
 
 	echo "[$((i + 1))/$num_exercise] Created $full_path"
 done
