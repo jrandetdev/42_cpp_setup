@@ -95,4 +95,4 @@ Already set up with c++98 flags and all the 42 requirements. Just works.
 - All the generated files have placeholder content - you still gotta write the actual code
 - Add the alias to everyone's .zshrc to use it
 
-That's it. Saves me like 5 minutes every module, which adds up.
+That's it. Saves me like 15-20 minutes every module, which definitely adds up over a whole CPP piscine. That's about 2 hours 15 minutes of your life saved :)
