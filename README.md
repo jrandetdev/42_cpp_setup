@@ -43,15 +43,22 @@ source ~/.zshrc
 
 ## Usage
 
+**Important:** The script creates the CPP module in your **current directory**. So navigate to where you want it first!
+
 ```bash
+cd ~/Desktop/cpp_modules    # Go where you want the CPP folder
 cpp-setup <module> <exercises>
 ```
 
 **Examples:**
 ```bash
-cpp-setup 5 6    # Makes CPP05 with ex00-ex05
-cpp-setup 2 4    # Makes CPP02 with ex00-ex03  
-cpp-setup 8 1    # Makes CPP08 with just ex00
+cd ~/Desktop/42projects
+cpp-setup 5 6    # Creates ~/Desktop/42projects/CPP05/ with ex00-ex05
+
+cd ~/Documents/school
+cpp-setup 2 4    # Creates ~/Documents/school/CPP02/ with ex00-ex03  
+
+cpp-setup 8 1    # Creates CPP08/ in whatever folder you're currently in
 cpp-setup        # Shows usage help
 ```
 
