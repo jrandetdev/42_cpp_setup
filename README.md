@@ -4,14 +4,14 @@ A setup script to automatically create 42 C++ module directory structures with e
 
 ## Remote execution
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/setup-cpp.sh)" 5 6
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/42_cpp_setup.sh)" 5 6
 ```
 
 ## Install
 
 This script simply creates the alias `cpp-setup` in your `~/.zshrc` and `~/.bashrc`.
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/setup_42_cpp/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/install.sh)"
 ```
 
 ## Use the script step by step:
@@ -22,14 +22,14 @@ Navigate to your 42 directory for circle_4 (or where you want to put your CPP02 
 **Step 2:**
 run the script
 ```sh
-cpp-setup 5 6
+42_cpp_setup 5 6
 ```
 
 ## Examples
 cd ~/Desktop/42projects
-cpp-setup 5 6    # Creates CPP05 with ex00-ex05
-cpp-setup 2 4    # Creates CPP02 with ex00-ex03
-cpp-setup 8 1    # Creates CPP08 with ex00
+42_cpp_setup 5 6    # Creates CPP05 with ex00-ex05
+42_cpp_setup 2 4    # Creates CPP02 with ex00-ex03
+42_cpp_setup 8 1    # Creates CPP08 with ex00
 
 ## Generated Structure
 ```
