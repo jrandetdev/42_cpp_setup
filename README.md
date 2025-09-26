@@ -81,13 +81,6 @@ Basic class with constructor, copy constructor, assignment operator, destructor.
 **Makefile:**
 Already set up with c++98 flags and all the 42 requirements. Just works.
 
-## Setup for sharing
-
-1. Create a GitHub repo
-2. Upload your `setup-cpp.sh` script
-3. Replace `YOURUSERNAME/YOURREPO` in the alias above
-4. Share the alias with classmates
-
 ## Notes
 
 - Only works with single digits (0-9) for both module and exercise count
