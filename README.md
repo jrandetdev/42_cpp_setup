@@ -1,9 +1,9 @@
 CPP Exercise Setup Script
-Automatically creates 42 C++ module directory structures with exercise folders, Makefiles, and boilerplate code.
+A setup script to automatically create 42 C++ module directory structures with exercise folders, Makefiles, and boilerplate code.
 Remote execution
 bash/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/setup_42_cpp/main/setup-cpp.sh)" 5 6
 Install
-This script creates the alias cpp-setup in your ~/.zshrc and ~/.bashrc.
+This script simply creates the alias cpp-setup in your ~/.zshrc and ~/.bashrc.
 bash/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/setup_42_cpp/main/install.sh)"
 Run
 bashcpp-setup 5 6
@@ -19,11 +19,18 @@ CPP05/
 │   ├── TO_REPLACE.hpp
 │   └── Makefile
 ├── ex01/
+│   ├── main.cpp
+│   ├── TO_REPLACE.hpp
+│   └── Makefile
 └── ex02/
-About
-A setup script to quickly generate 42 CPP module structures with proper boilerplate code.
-Resources
+    ├── main.cpp
+    ├── TO_REPLACE.hpp
+    └── Makefile
+What gets created
 
-Saves 15-20 minutes of setup per module
-Always uses latest version from GitHub
-No local files needed
+main.cpp: Basic C++ main function with proper includes
+TO_REPLACE.hpp: Class template with Orthodox Canonical Form
+Makefile: Pre-configured for 42 C++98 requirements with all necessary flags
+
+About
+A setup script to quickly generate 42 CPP module structures with proper boilerplate code. Saves 15-20 minutes of manual setup per module.
