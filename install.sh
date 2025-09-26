@@ -1,4 +1,4 @@
-curl -o ~/setup-cpp.sh https://raw.githubusercontent.com/jrandetdev/setup_42_cpp/main/setup-cpp.sh
+curl -o ~/42_cpp_setup.sh https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/42_cpp_setup.sh
 chmod +x ~/setup-cpp.sh
 
 echo 'alias 42_cpp_setup="~/42_cpp_setup.sh"' >> ~/.zshrc 2>/dev/null
