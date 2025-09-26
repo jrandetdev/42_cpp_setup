@@ -1,5 +1,5 @@
 curl -o ~/42_cpp_setup.sh https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/42_cpp_setup.sh
-chmod +x ~/setup-cpp.sh
+chmod +x ~/42_cpp_setup.sh  # ✅ Correct filename!
 
 echo 'alias 42_cpp_setup="~/42_cpp_setup.sh"' >> ~/.zshrc 2>/dev/null
 echo 'alias 42_cpp_setup="~/42_cpp_setup.sh"' >> ~/.bashrc 2>/dev/null
