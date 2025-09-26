@@ -56,6 +56,7 @@ sed -i '/alias cpp-setup=/d' ~/.zshrc
 
 # Remove from ~/.bashrc  
 sed -i '/alias cpp-setup=/d' ~/.bashrc
+```
 
 ## About
 
