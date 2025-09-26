@@ -15,6 +15,10 @@ This script simply creates the alias `cpp-setup` in your `~/.zshrc` and `~/.bash
 ```
 
 ## Run
+Step1:
+Navigate to your 42 directory for circle_4 to create the CPP0X directory with the subsequent ex0x/ folders inside.
+
+Step 2: run the script
 ```sh
 cpp-setup 5 6
 ```
