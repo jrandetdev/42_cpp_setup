@@ -26,10 +26,12 @@ run the script
 ```
 
 ## Examples
-cd ~/Desktop/42projects
-42_cpp_setup 5 6    # Creates CPP05 with ex00-ex05
-42_cpp_setup 2 4    # Creates CPP02 with ex00-ex03
-42_cpp_setup 8 1    # Creates CPP08 with ex00
+```sh
+   cd ~/Desktop/42projects
+   42_cpp_setup 5 6    # Creates CPP05 with ex00-ex05
+   42_cpp_setup 2 4    # Creates CPP02 with ex00-ex03
+   42_cpp_setup 8 1    # Creates CPP08 with ex00
+```
 
 ## Generated Structure
 ```
@@ -52,10 +54,10 @@ CPP05/
 Remove the `cpp-setup` alias from your shell configuration files:
 ```sh
 # Remove from ~/.zshrc
-sed -i '/alias cpp-setup=/d' ~/.zshrc
+sed -i '/alias 42_cpp_setup=/d' ~/.zshrc
 
 # Remove from ~/.bashrc  
-sed -i '/alias cpp-setup=/d' ~/.bashrc
+sed -i '/alias 42_cpp_setup=/d' ~/.bashrc
 ```
 
 ## About
