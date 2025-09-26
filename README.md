@@ -48,6 +48,15 @@ CPP05/
 └── Makefile
 ```
 
+## Uninstall
+Remove the `cpp-setup` alias from your shell configuration files:
+```sh
+# Remove from ~/.zshrc
+sed -i '/alias cpp-setup=/d' ~/.zshrc
+
+# Remove from ~/.bashrc  
+sed -i '/alias cpp-setup=/d' ~/.bashrc
+
 ## About
 
 A setup script to quickly generate 42 CPP module structures with proper boilerplate code. Saves 15-20 minutes of manual setup per module.
