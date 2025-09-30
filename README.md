@@ -4,7 +4,7 @@ A setup script to automatically create 42 C++ module directory structures with e
 
 ## Remote execution
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/42_cpp_setup.sh)" 5 6
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jrandetdev/42_cpp_setup/main/42_cpp_setup.sh)" 42_cpp_setup 5 6
 ```
 
 ## Install
