@@ -97,7 +97,7 @@ fi
 
 module_num=$1
 num_exercise=$2
-if [ ${#module_num} -gt 1 ] || [ ${#num_exercise} -gt 1 ];
+if [ ${#module_num} -gt 10 ] || [ ${#num_exercise} -gt 10 ];
 then
 	echo "$0: error: number has to be between 0 and 9 for both entries."
 	exit 1
